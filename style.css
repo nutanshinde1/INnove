@@ -1,0 +1,143 @@
+/* Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+/* Header section */
+.logo-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 60px;
+  background: linear-gradient(to right, #adcedd, #edf3f5); 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+  border-bottom: 3px solid #aebfc5;
+  border-radius: 0 0 25px 25px;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+  border-radius: 150px;
+  box-shadow: 0 4px 12px rgba(139, 38, 38, 0.2);
+}
+
+.logo-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #010408;
+  text-shadow: 1px 1px 3px rgba(168, 147, 147, 0.1);
+}
+
+.logo-text p {
+  font-size: 2rem;
+  color: #6e1111;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* Hero, About, Categories, Pricing, etc. */
+section {
+  padding: 40px 60px;
+  width: 100%;
+}
+
+h2 {
+  color: #0e070a;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Product categories & testimonials */
+.categories,
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.category,
+.testimonial {
+  background: #c0bdca;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Contact / WhatsApp Button */
+.contact {
+  text-align: center;
+}
+
+.contact a,
+.whatsapp-btn {
+  display: inline-block;
+  background-color: #25d366;
+  color: white;
+  padding: 16px 36px; /* Increased size */
+  font-size: 1.3rem;   /* Larger text */
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+  margin-top: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-btn:hover {
+  background-color: #128c7e;
+  transform: scale(1.05); /* subtle zoom effect */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #9cd3e4;
+  color: #333;
+}
+
+/* 📱 Responsive for Small Devices */
+@media (max-width: 768px) {
+  .logo-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 15px;
+  }
+
+  .categories,
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  .logo-text h1 {
+    font-size: 2.4rem;
+  }
+
+  .logo-text p {
+    font-size: 1rem;
+  }
+}
+
+
