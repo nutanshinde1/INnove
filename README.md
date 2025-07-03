@@ -17,6 +17,4 @@ A handcrafted return gift website built by Nutan & Isha to celebrate life’s sp
 - CSS3  
 - GitHub Pages (Hosting)
 
----
 
-> Made with 💝 by Nutan & Isha
